@@ -104,9 +104,10 @@ ul, li {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    row-gap: 1.5rem;
+    padding: 1.4rem 2.5rem;
     color: white;
     background-color: var(--dark-pink);
-    padding: 1.4rem 2.5rem;
 }
 
 .fab-header-title {
@@ -123,15 +124,18 @@ ul, li {
 .fab-header-links {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     column-gap: 2rem;
     row-gap: 1rem;
-    list-style: none;
+    width: 100%;
     font-size: 0.92rem;
+    list-style: none;
 }
 
 .fab-header-link a {
     color: white;
     text-decoration: none;
+    text-underline-offset: 4px;
 }
 
 .fab-header-link a:hover {
@@ -144,14 +148,8 @@ ul, li {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    padding: 2.5rem 3.5rem;
+    padding: 2.5rem 3rem;
     background-color: var(--old-pink);
-}
-
-.fab-introduction-sidebar {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0.5rem;
 }
 
 .fab-introduction-sidebar-image {
@@ -179,13 +177,16 @@ ul, li {
     display: flex;
     align-items: flex-start;
     column-gap: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 1.4rem;
 }
 
 .fab-introduction-main-language-card {
-    padding: 0.5rem 1.5rem;
-    background-color: #f4f2f0d8;
+    padding: 0.8rem 1.5rem;
+    text-align: center;
+    color: white;
+    background-color: var(--dark-pink);
     border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 /*END INTRODUCTON */
