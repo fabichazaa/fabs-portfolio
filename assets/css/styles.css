@@ -71,7 +71,7 @@ ul, li {
     background-color: rgba(0, 0, 0, 0.807);
 }
 
-.fab-section-card {
+.fab-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,6 +97,25 @@ ul, li {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 5px;
   flex: 1;
+}
+
+.fab-badge {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    background-color: var(--fuchsia-pink);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.fab-badge svg {
+    width: 22px;
+    height: 22px;
+    fill: white;
 }
 
 /** HADER **/
@@ -175,20 +194,15 @@ ul, li {
     text-align: justify;
 }
 
-.fab-introduction-main-languages {
+.fab-introduction-main-badges {
+    margin-top: 1.5rem;
+}
+
+.fab-indotruction-main-badge-languages {
     display: flex;
     align-items: flex-start;
     column-gap: 1.5rem;
     margin-top: 1.4rem;
-}
-
-.fab-introduction-main-language-card {
-    padding: 0.8rem 1.5rem;
-    text-align: center;
-    color: white;
-    background-color: var(--dark-pink);
-    border-radius: 5px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 /*END INTRODUCTON */
