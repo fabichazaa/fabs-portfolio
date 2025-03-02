@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --dark-pink: #bb666c;
+    --old-pink: #e5bbb7;
+    --vt-c-indigo: #2c3e50;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: var(--vt-c-indigo);
+    transition:
+      color 0.5s,
+      background-color 0.5s;
+    line-height: 1.6;
+    font-family: 'Courier Prime', sains-serif;
+    font-size: 15px;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold { 
+  font-weight: bold;
+}
+
+.fab-section-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.8rem;
+  margin: 2.5rem 18rem;
+  border-radius: 5px;
+}
+
+.fab-card-container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+}
+
+.fab-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 2rem 2rem;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  flex: 1;
+}
+
+/** HADER **/
+.fab-header { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background-color: var(--dark-pink);
+    padding: 1.5rem 2.5rem;
+}
+
+.fab-header-title {
+    margin: 0;
+}
+
+.fab-header-links {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.5rem;
+    row-gap: 1rem;
+    list-style: none;
+}
+
+.fab-header-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.fab-header-link a:hover {
+    text-decoration: underline;
+}
+/*END HEADER */
+
+/*INTRODUCTION*/
+.fab-introduction {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4rem;
+    padding: 2.5rem 12rem;
+    background-color: var(--old-pink);
+}
+
+.fab-introduction-sidebar {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.1rem;
+}
+
+.fab-introduction-sidebar-image {
+    width: 250px;
+    height: 100%;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.fab-introduction-main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.fab-introduction-main-paragraph {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.fab-introduction-main-languages {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 1.5rem;
+    margin-top: 1.2rem;
+}
+
+.fab-introduction-main-language-card {
+    padding: 0.5rem 1.5rem;
+    color: white;
+    background-color: var(--dark-pink);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+}
+
+/*END INTRODUCTON */
+.fab-journey-card-icon { 
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: pink;
+}
+
+.fab-journey-card-icon svg{
+    width: 30px;
+    height: 30px;
+	flex-shrink: 0;
+}
+
+.fab-journey-card-list {
+    margin: 0;
+    padding:0;
+    list-style: none;
+    display: flex;
+    row-gap: 0.5rem;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.fab-journey-card-list-item {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.4rem;
+}
+
+.fab-journey-card-list-item p {
+    font-size: 1rem;
+}
+/*JOURNEY END*/
+
+
+/*PROJECTS*/
+.fab-projects-cards {
+    display: flex;
+}
+/*PROJECTS END*/
