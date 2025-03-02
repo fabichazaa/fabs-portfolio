@@ -3,6 +3,7 @@
 :root {
     --dark-pink: #bb666c;
     --old-pink: #e5bbb7;
+    --fuchsia-pink: #f97185;
     --vt-c-indigo: #2c3e50;
 }
 
@@ -27,6 +28,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
+    background-color: #f4f2f07b;
 }
 
 h1, h2, h3, h4 {
@@ -59,13 +61,14 @@ ul, li {
     font-family: 'Courier Prime', sains-serif;
     font-size: 1rem;
     padding: 0.5rem 0.2rem;
-    background-color: var(--old-pink);
+    color: white;
+    background-color: black;
     border-radius: 5px;
-    border: 2px solid var(--old-pink);
+    border: none;
 }
 
 .fab-button:hover {
-    border: 2px solid var(--dark-pink);
+    background-color: rgba(0, 0, 0, 0.807);
 }
 
 .fab-section-card {
@@ -182,9 +185,7 @@ ul, li {
 
 .fab-introduction-main-language-card {
     padding: 0.5rem 1.5rem;
-    color: white;
-    background-color: var(--dark-pink);
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #f4f2f07b;
     border-radius: 5px;
 }
 
@@ -255,18 +256,29 @@ ul, li {
 }
 
 .fab-project-card-tool {
-    background-color: pink;
+    color: white;
+    background-color: var(--fuchsia-pink);
     border-radius: 5px;
     padding: 0.3rem 0.8rem;
 }
-/*PROJECTS END*/
 
+/*PROJECTS END*/
+.fab-contact { 
+    background-color: var(--old-pink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 2rem 14rem;
+}
+
+/* CONTACT */
+/*CONTACT END */
 /*FOOTER*/
 .fab-footer {
-    border-top: 1px solid var(--old-pink);
-    background-color: var(--dark-pink);
-    color: white;
+    padding: 0.6rem;
     text-align: center;
-    padding: 0.5rem;
+    background-color: var(--fuchsia-pink);
+    color: white;
 }
 /*FOOTER END*/
