@@ -21,7 +21,7 @@ body {
       background-color 0.5s;
     line-height: 1.6;
     font-family: 'Courier Prime', sains-serif;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: normal;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -94,6 +94,7 @@ ul, li {
   display: flex;
   flex-direction: column;
   column-gap: 2rem;
+  row-gap: 3.2rem;
 }
 
 .fab-card {
@@ -202,7 +203,7 @@ ul, li {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    padding: 2.5rem 3rem;
+    padding: 2.5rem 2.5rem;
     background-color: var(--old-pink);
 }
 
@@ -229,6 +230,9 @@ ul, li {
 }
 
 .fab-introduction-main-badges {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
     margin-top: 1.5rem;
 }
 
@@ -236,10 +240,9 @@ ul, li {
     display: flex;
     align-items: stretch;
     column-gap: 1.5rem;
-    margin-top: 1.4rem;
 }
 
-.fab-indotruction-main-badge-languages .fab-badge{
+.fab-indotruction-main-badge-languages .fab-badge {
     flex: 1;
 }
 /* END Introduction */
@@ -375,6 +378,10 @@ ul, li {
         font-size: 15px;
     }
 
+    .fab-card {
+
+    }
+
     .fab-section {
         margin: 2.8rem 4rem;
     }
@@ -437,12 +444,15 @@ ul, li {
     }
 
     .fab-introduction-main-badges {
+        align-items: stretch;
         margin-top: 1rem;
-        width: 50%;
+        column-gap: 1.5rem;
+        flex-wrap: wrap;
+        row-gap: 1.5rem;
     }
-
-    .fab-indotruction-main-badge-languages {
-        margin-top: 1.2rem;
+    
+    .fab-introduction-main-badges .fab-badge{
+        line-height: 1;
     }
 
     .fab-card-container {
@@ -464,10 +474,32 @@ ul, li {
   }
   
   /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {  
+  @media (min-width: 1200px) {
+    .fab-introduction {
+        padding: 2.5rem 6rem;
+    }
+
     .fab-introduction-main-badges {
-        margin-top: 1rem;
-        width: 40%;
+        flex-direction: row;
+    }
+
+    .fab-introduction-main-badges .fab-badge, 
+    .fab-indotruction-main-badge-languages .fab-bage {
+        line-height: 1;
+    }
+  }
+
+  @media (min-width: 1800px) {
+    .fab-introduction {
+        padding: 3rem 12rem;
+    }
+
+    .fab-introduction-main-badges {
+        flex-direction: row;
+    }
+
+    .fab-goodbye .fab-card {
+        padding: 3.2rem;
     }
   }
   
