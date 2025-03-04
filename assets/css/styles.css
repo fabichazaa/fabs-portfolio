@@ -47,6 +47,10 @@ ul, li {
     padding: 0;
 }
 
+h1:focus , h2:focus, h3:focus, h4:focus, p:focus {
+    outline-color: var(--fuchsia-pink);
+}
+
 .center {
   text-align: center;
 }
@@ -88,6 +92,10 @@ ul, li {
 .fab-section-header {
     text-align: center;
     margin-bottom: 0.2rem;
+}
+
+.fab-section-header p {
+    font-size: 1.2rem;
 }
 
 .fab-card-container {
@@ -144,6 +152,10 @@ ul, li {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+.fab-badge:focus {
+    outline-color: var(--vt-c-indigo);
+}
+
 .fab-badge svg {
     width: 18px;
     height: 18px;
@@ -196,6 +208,11 @@ ul, li {
 .fab-header-link a:hover {
     text-decoration: underline;
 }
+
+.fab-header-link a:focus {
+    outline-color: var(--fuchsia-pink);
+}
+
 /* END Header */
 
 /* Introduction */
@@ -227,6 +244,10 @@ ul, li {
     flex-direction: column;
     row-gap: 1rem;
     text-align: justify;
+}
+
+.fab-introduction-main-paragraph p {
+    font-size: 1.2rem;
 }
 
 .fab-introduction-main-badges {
@@ -376,10 +397,6 @@ ul, li {
   @media (min-width: 768px)  {  
     body {
         font-size: 15px;
-    }
-
-    .fab-card {
-
     }
 
     .fab-section {
