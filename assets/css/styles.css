@@ -11,7 +11,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     margin: 0;
     padding: 0;
@@ -56,19 +55,23 @@ ul, li {
   font-weight: bold;
 }
 
+/* Essentials */
 .fab-button {
     cursor: pointer;
     font-family: 'Courier Prime', sains-serif;
     font-size: 1rem;
     padding: 0.5rem 0.2rem;
     color: white;
-    background-color: black;
+    background-color: rgb(251, 174, 187);
     border-radius: 5px;
     border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
 }
 
-.fab-button:hover {
-    background-color: rgba(0, 0, 0, 0.807);
+.fab-button:hover,
+.fab-button:focus {
+    background-color: pink
 }
 
 .fab-section {
@@ -91,12 +94,32 @@ ul, li {
   position: relative;
   display: flex;
   flex-direction: column;
+  flex: 1;
   row-gap: 1rem;
   padding: 2rem 2rem;
   background-color: white;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 5px;
-  flex: 1;
+}
+
+.fab-card-icon { 
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: pink;
+}
+
+.fab-card-icon svg{
+    width: 30px;
+    height: 30px;
+	flex-shrink: 0;
 }
 
 .fab-badge {
@@ -115,12 +138,14 @@ ul, li {
 }
 
 .fab-badge svg {
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
     fill: white;
+    flex-shrink: 0;
 }
+/** END Essentials **/
 
-/** HADER **/
+/** Header **/
 .fab-header { 
     display: flex;
     flex-direction: column;
@@ -146,6 +171,7 @@ ul, li {
 .fab-header-links {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     column-gap: 2rem;
     row-gap: 1rem;
@@ -163,9 +189,9 @@ ul, li {
 .fab-header-link a:hover {
     text-decoration: underline;
 }
-/*END HEADER */
+/* END Header */
 
-/*INTRODUCTION*/
+/* Introduction */
 .fab-introduction {
     display: flex;
     flex-direction: column;
@@ -202,33 +228,20 @@ ul, li {
 
 .fab-indotruction-main-badge-languages {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     column-gap: 1.5rem;
     margin-top: 1.4rem;
 }
 
-/*END INTRODUCTON */
-.fab-journey-card-icon { 
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    border-radius: 50px;
-    background-color: pink;
+.fab-indotruction-main-badge-languages .fab-badge{
+    flex: 1;
 }
+/* END Introduction */
 
-.fab-journey-card-icon svg{
-    width: 30px;
-    height: 30px;
-	flex-shrink: 0;
-}
+/* Skills */
 
-.fab-journey-card-list {
+
+.fab-skills-card-list {
     margin: 0;
     padding:0;
     list-style: none;
@@ -238,19 +251,22 @@ ul, li {
     align-items: flex-start
 }
 
-.fab-journey-card-list-item {
+.fab-skills-card-list-item {
     display: flex;
     flex-direction: row;
     column-gap: 0.4rem;
 }
 
-.fab-journey-card-list-item p {
+.fab-skills-card-list-item svg {
+    flex-shrink: 0;
+}
+
+.fab-skills-card-list-item p {
     font-size: 1rem;
 }
-/*JOURNEY END*/
+/* END Skills */
 
-
-/*PROJECTS*/
+/* Projects */
 .fab-projects-cards {
     display: flex;
     column-gap: 1rem;
@@ -267,6 +283,9 @@ ul, li {
     row-gap: 1rem;
 }
 
+.fab-project-card .fab-card-icon{
+    background-color: var(--vt-c-indigo);
+}
 .fab-project-card-tools {
     display: flex;
     flex-direction: row;
@@ -280,8 +299,9 @@ ul, li {
     border-radius: 5px;
     padding: 0.3rem 0.8rem;
 }
+/* END Projects */
 
-/*PROJECTS END*/
+/* Goodbye */
 .fab-goodbye { 
     background-color: var(--old-pink);
     display: flex;
@@ -290,47 +310,41 @@ ul, li {
     text-align: justify;
     padding: 2rem 2rem;
 }
+/* END Goodbye */
 
-/* CONTACT */
-/*CONTACT END */
-/*FOOTER*/
+/* Footer */
 .fab-footer {
     padding: 0.6rem;
     text-align: center;
     background-color: var(--dark-pink);
     color: white;
 }
-/*FOOTER END*/
+/* End Footer */
 
 
-/* 📱 Mobile (small screens) */
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-    .container {
-        flex-direction: column; /* Stack items vertically */
-    }
-}
 
-/* 📱 Larger Phones */
-@media (max-width: 767px) {
-    .hero-section {
-        text-align: center;
-    }
-}
-
-/* 📱 Tablets */
-@media (max-width: 1024px) {
-    .grid-layout {
-        grid-template-columns: 1fr; /* Make grids single-column */
-    }
-}
-
-/* 💻 Laptops and larger screens */
-@media (min-width: 1025px) {
-    .container {
-        max-width: 1200px; /* Keep a nice width */
-        margin: auto;
-    }
-}
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {  
+    /* Styles for small screens */
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) {  
+    /* Styles for small devices */
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {  
+    /* Styles for tablets */
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {  
+    /* Styles for desktops */
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    /* Styles for large screens */
+  }
+  
